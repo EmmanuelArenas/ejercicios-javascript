@@ -34,7 +34,8 @@ Dividi los ejercicios en dos grupos, ya que algunos necesitan mas conocimientos 
 ## Índice
 
 - 🔴 [Factorial](./src/ejercicios/factorial/factorial.js)
-- 🟢 [Operaciones Basicas](./src/ejercicios/operaciones_basicas/basicas.js)
+- 🟢 [Operaciones Basicas](./src/ejercicios/operaciones-basicas/basicas.js)
+- 🟢 [Palabra Mas Larga](./src/ejercicios/palabra-mas-larga/palabra.js)
 
 ---
 

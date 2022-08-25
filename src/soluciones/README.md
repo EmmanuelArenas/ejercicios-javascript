@@ -4,6 +4,7 @@
 
 - [Factorial](#factorial)
 - [Operaciones Basicas](#operaciones-basicas)
+- [Palabra Mas Larga](#palabra-mas-larga)
 
 ### Factorial
 
@@ -96,5 +97,24 @@ const division = (a, b) => {
 ```js
 const multiplicacion = (a, b) => {
   return a * b;
+};
+```
+
+### Palabra Mas Larga
+
+```js
+const palabraMasLarga = (str) => {
+  // tu codigo
+  const dividir = str.split(" ");
+  let palabraLarga = dividir[0];
+
+  for (const palabra of dividir) {
+    if (palabra.length >= palabraLarga.length) {
+      palabraLarga = palabra;
+    }
+  }
+  respuesta = [];
+  respuesta.push(palabraLarga, palabraLarga.length);
+  return respuesta;
 };
 ```
