@@ -1,5 +1,5 @@
 /* 
-- Encuentra el factorial de un numero (n!) entero mayor o igual a cero.
+- Encuentra el factorial de un numero (n!) entero mayor o igual a cero y retorna el resultado.
 - Si introduce un elemento negativo retorna el mensaje: "La funcion no acepta negativos"
 
 Ejemplo: 
@@ -17,6 +17,7 @@ const factorial = (num) => {
   //  Tu respuesta va aqui
 };
 
+// 👇 No modifiques este codigo 🚫
 module.exports = {
   factorial,
 };

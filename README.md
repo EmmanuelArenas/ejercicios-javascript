@@ -14,6 +14,10 @@ Mi recomendación es que cuentes con los conocimientos básicos en programación
 
 También están recopiladas las soluciones por si en algún momento quieres echar un vistazo pero te recomiendo que des lo mejor de ti.
 
+Dividi los ejercicios en dos grupos, ya que algunos necesitan mas conocimientos que otros.
+
+`Te deseo mucho éxito`
+
 **Pasos para ejecutar el proyecto en tu equipo 🔧**
 
 ```txt
@@ -25,13 +29,12 @@ También están recopiladas las soluciones por si en algún momento quieres echa
     6. En la terminal ejecuta: npm test nombreDelEjercicio
 ```
 
-`Te deseo mucho éxito`
-
 ---
 
-## Índice.
+## Índice
 
-- [Factorial](./src/factorial/factorial.js)
+- 🔴 [Factorial](./src/ejercicios/factorial/factorial.js)
+- 🟢 [Operaciones Basicas](./src/ejercicios/operaciones_basicas/basicas.js)
 
 ---
 

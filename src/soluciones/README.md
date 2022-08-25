@@ -3,6 +3,7 @@
 ### Índice.
 
 - [Factorial](#factorial)
+- [Operaciones Basicas](#operaciones-basicas)
 
 ### Factorial
 
@@ -62,4 +63,38 @@ i++;
 return result;
 };
 factorialWhile(6);
+```
+
+### Operaciones Basicas
+
+**Suma**
+
+```js
+const suma = (a, b) => {
+  return a + b;
+};
+```
+
+**Resta**
+
+```js
+const resta = (a, b) => {
+  return a - b;
+};
+```
+
+**División**
+
+```js
+const division = (a, b) => {
+  return a / b;
+};
+```
+
+**Multiplicación**
+
+```js
+const multiplicacion = (a, b) => {
+  return a * b;
+};
 ```
