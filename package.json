@@ -1,0 +1,28 @@
+{
+  "name": "ejercicios-javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmmanuelArenas/ejercicios-javascript.git"
+  },
+  "keywords": [
+    "ejercicios javascript",
+    "js",
+    "factorial javascript",
+    "fibonacci javascript"
+  ],
+  "author": "emmanuel.live19@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EmmanuelArenas/ejercicios-javascript/issues"
+  },
+  "homepage": "https://github.com/EmmanuelArenas/ejercicios-javascript#readme",
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
+}
