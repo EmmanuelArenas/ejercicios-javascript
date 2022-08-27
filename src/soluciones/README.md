@@ -5,6 +5,7 @@
 - [Factorial](#factorial)
 - [Operaciones Basicas](#operaciones-basicas)
 - [Palabra Mas Larga](#palabra-mas-larga)
+- [Temperatura](#temperatura)
 
 ### Factorial
 
@@ -116,5 +117,32 @@ const palabraMasLarga = (str) => {
   respuesta = [];
   respuesta.push(palabraLarga, palabraLarga.length);
   return respuesta;
+};
+```
+
+### Temperatura
+
+```js
+const celciusAFahrenheit = (celcius) => {
+  // Tu código va aquí
+  let fahrenheit = (celcius * 9) / 5 + 32;
+  return Math.floor(fahrenheit);
+};
+```
+
+```js
+const fahrenheitACelcius = (fahrenheit) => {
+  // Tu código va aquí
+  let celcius = ((fahrenheit - 32) * 5) / 9;
+  return Math.ceil(celcius);
+};
+```
+
+```js
+const fahrenheitAKelvin = (fahrenheit) => {
+  // Tu código va aquí
+  let kelvin = (fahrenheit - 32) * (5 / 9) + 273.15;
+  let result = Math.abs(Math.round(kelvin));
+  return result;
 };
 ```
