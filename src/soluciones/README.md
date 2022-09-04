@@ -3,6 +3,7 @@
 ### Índice.
 
 - [Factorial](#factorial)
+- [Números Mayores](#números-mayores)
 - [Operaciones Basicas](#operaciones-basicas)
 - [Palabra Mas Larga](#palabra-mas-larga)
 - [Temperatura](#temperatura)
@@ -65,6 +66,44 @@ i++;
 return result;
 };
 factorialWhile(6);
+```
+
+### Números mayores
+
+**Números mayores con ciclo for**
+
+```js
+const numerosMasGrandes = (arr) => {
+  const newArry = [];
+  for (let i = 0; i < arr.length; i++) {
+    let numGrande = arr[i][0];
+    for (let j = 1; j < arr[i].length; j++) {
+      if (arr[i][j] > numGrande) {
+        numGrande = arr[i][j];
+      }
+    }
+    newArry.push(numGrande);
+  }
+  return newArry;
+};
+```
+
+**Números mayores con metodos**
+
+```js
+const numerosMasGrandes = (arr) => {
+  return arr.map(function (group) {
+    return group.reduce(function (prev, current) {
+      return current > prev ? current : prev;
+    });
+  });
+};
+```
+
+```js
+const numerosMasGrandes = (arr) => {
+  return arr.map(Function.apply.bind(Math.max, null));
+};
 ```
 
 ### Operaciones Basicas
