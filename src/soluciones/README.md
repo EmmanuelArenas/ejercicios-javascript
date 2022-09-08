@@ -3,6 +3,7 @@
 ### Índice.
 
 - [Factorial](#factorial)
+- [Final Identico](#final-identico)
 - [Números Mayores](#números-mayores)
 - [Operaciones Basicas](#operaciones-basicas)
 - [Palabra Mas Larga](#palabra-mas-larga)
@@ -66,6 +67,15 @@ i++;
 return result;
 };
 factorialWhile(6);
+```
+
+### Final Identico
+
+```js
+const finalIdentico = (cadena, final) => {
+  let resultado = cadena.slice(cadena.length - final.length) === final;
+  return resultado;
+};
 ```
 
 ### Números mayores
