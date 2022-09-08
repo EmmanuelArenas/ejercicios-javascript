@@ -78,6 +78,12 @@ const finalIdentico = (cadena, final) => {
 };
 ```
 
+```js
+const finalIdentico = (cadena, final) => {
+  return cadena.endsWith(final);
+};
+```
+
 ### Números mayores
 
 **Números mayores con ciclo for**
