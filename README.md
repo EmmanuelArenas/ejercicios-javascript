@@ -39,6 +39,7 @@ Dividi los ejercicios en dos grupos, ya que algunos necesitan mas conocimientos 
 - 🟢 [Operaciones Basicas](./src/ejercicios/operaciones-basicas/basicas.js)
 - 🟢 [Palabra Mas Larga](./src/ejercicios/palabra-mas-larga/palabra.js)
 - 🟢 [Temperatura](./src/ejercicios/temperatura/temperatura.js)
+- 🟢 [Título](./src/ejercicios/titulo/titulo.js)
 
 ---
 

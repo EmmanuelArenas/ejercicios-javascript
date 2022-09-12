@@ -1,5 +1,5 @@
 /*
-Crea una función que verifique el el final de una cadena. 
+Crea una función que verifique el final de una cadena. 
 Ej.
 cadena="hola mundo"
 final="undo"

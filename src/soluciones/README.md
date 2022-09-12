@@ -8,6 +8,7 @@
 - [Operaciones Basicas](#operaciones-basicas)
 - [Palabra Mas Larga](#palabra-mas-larga)
 - [Temperatura](#temperatura)
+- [Título](#título)
 
 ### Factorial
 
@@ -200,4 +201,46 @@ const fahrenheitAKelvin = (fahrenheit) => {
   let result = Math.abs(Math.round(kelvin));
   return result;
 };
+```
+
+### Título
+
+**Con ciclo for**
+
+```js
+function titulo(str) {
+  let strSplit = str.split(" ");
+  let newStr = [];
+  for (let i = 0; i < strSplit.length; i++) {
+    newStr[i] =
+      strSplit[i][0].toUpperCase() + strSplit[i].slice(1).toLowerCase();
+  }
+  return newStr.join(" ");
+}
+```
+
+**Con ciclo for in**
+
+```js
+function titulo(str) {
+  let strSplit = str.split(" ");
+  let newStr = [];
+  for (let i in strSplit) {
+    newStr[i] =
+      strSplit[i][0].toUpperCase() + strSplit[i].slice(1).toLowerCase();
+  }
+  return newStr.join(" ");
+}
+```
+
+**Con Métodos**
+
+```js
+function titulo(str) {
+  return str
+    .toLowerCase()
+    .split(" ")
+    .map((val) => val.replace(val.charAt(0), val.charAt(0).toUpperCase()))
+    .join(" ");
+}
 ```
