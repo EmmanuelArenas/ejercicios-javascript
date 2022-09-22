@@ -7,6 +7,7 @@
 - [Números Mayores](#números-mayores)
 - [Operaciones Basicas](#operaciones-basicas)
 - [Palabra Mas Larga](#palabra-mas-larga)
+- [Secuencia de Caracteres](#secuencia-de-caracteres)
 - [Temperatura](#temperatura)
 - [Título](#título)
 
@@ -174,6 +175,34 @@ const palabraMasLarga = (str) => {
   respuesta.push(palabraLarga, palabraLarga.length);
   return respuesta;
 };
+```
+
+### Secuencia de caracteres
+
+```js
+function secuencia(cadena) {
+  const apertura = "([{";
+  const cierre = ")]}";
+  const comparador = { ")": "(", "]": "[", "}": "{" };
+  const pila = [];
+
+  for (const caracter of cadena) {
+    if (apertura.includes(caracter)) {
+      pila.push(caracter);
+    } else if (cierre.includes(caracter)) {
+      if (pila.length == 0) {
+        return false;
+      }
+      if (pila[pila.length - 1] === comparador[caracter]) {
+        pila.pop();
+      } else {
+        return false;
+      }
+    }
+  }
+
+  return pila.length === 0;
+}
 ```
 
 ### Temperatura
