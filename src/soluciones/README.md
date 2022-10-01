@@ -2,6 +2,7 @@
 
 ### Índice.
 
+- [Elimina Repetidos](#elimina-repetidos)
 - [Factorial](#factorial)
 - [Final Identico](#final-identico)
 - [Números Mayores](#números-mayores)
@@ -10,6 +11,51 @@
 - [Secuencia de Caracteres](#secuencia-de-caracteres)
 - [Temperatura](#temperatura)
 - [Título](#título)
+
+### Elimina Repetidos
+
+**Metodo Set**
+
+```js
+const arr = [1, 3, 1, "hola", "hola", true, false, false, true];
+
+const eliminaRepetidos = (arr) => {
+  return [...new Set(arr)];
+};
+
+eliminaRepetidos(arr); //[ 1, 3, 'hola', true, false ]
+```
+
+**Metodo filter**
+
+```js
+const arr = [1, 3, 1, "hola", "hola", true, false, false, true];
+
+const eliminaRepetidos = (arr) => {
+  return (resultadoFilter = arr.filter((item, index) => {
+    return arr.indexOf(item) === index;
+  }));
+};
+
+eliminaRepetidos(arr); //[ 1, 3, 'hola', true, false ]
+```
+
+**Metodo reduce**
+
+```js
+const arr = [1, 3, 1, "hola", "hola", true, false, false, true];
+
+const eliminaRepetidos = (arr) => {
+  let resultReduce = arr.reduce((acc, item) => {
+    if (!acc.includes(item)) {
+      acc.push(item);
+    }
+    return acc;
+  }, []);
+  return resultReduce;
+};
+eliminaRepetidos(arr); //[ 1, 3, 'hola', true, false ]
+```
 
 ### Factorial
 

@@ -33,6 +33,7 @@ Dividi los ejercicios en dos grupos, ya que algunos necesitan mas conocimientos 
 
 ## Índice
 
+- 🟢 [Eliminar Repetidos](./src/ejercicios/elimina-repetidos/elimina_repetidos.js)
 - 🔴 [Factorial](./src/ejercicios/factorial/factorial.js)
 - 🔴 [Final Identico](./src/ejercicios/final-identico/final_identico.js)
 - 🔴 [Numeros Mayores](./src/ejercicios/numeros-mayores/num_mayores.js)
