@@ -5,6 +5,7 @@
 - [Elimina Repetidos](#elimina-repetidos)
 - [Factorial](#factorial)
 - [Final Identico](#final-identico)
+- [Número Caracteres](#número-caracteres)
 - [Números Mayores](#números-mayores)
 - [Operaciones Basicas](#operaciones-basicas)
 - [Palabra Mas Larga](#palabra-mas-larga)
@@ -130,6 +131,17 @@ const finalIdentico = (cadena, final) => {
 const finalIdentico = (cadena, final) => {
   return cadena.endsWith(final);
 };
+```
+
+### Número Caracteres
+
+```js
+const numCaracteres = (str) => {
+  if (str) {
+    return str.length;
+  }
+};
+numCaracteres("Hola Mundo"); //10
 ```
 
 ### Números mayores
