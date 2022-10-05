@@ -7,6 +7,7 @@
 - [Factorial](#factorial)
 - [Final Identico](#final-identico)
 - [Letra Faltante](#letra-faltante)
+- [Mínimo Común Múltiplo](#mínimo-común-múltiplo)
 - [Número Caracteres](#número-caracteres)
 - [Números Mayores](#números-mayores)
 - [Operaciones Basicas](#operaciones-basicas)
@@ -168,6 +169,28 @@ const letraFaltante = (str) => {
   });
 
   return result;
+};
+```
+
+### Mínimo Común Múltiplo
+
+```js
+const minimoComunMultiplo = (arr) => {
+  const [min, max] = arr.sort((a, b) => a - b);
+  const rango = Array(max - min + 1)
+    .fill(0)
+    .map(($, i) => i + min);
+  const upperBound = rango.reduce((prod, curr) => prod * curr);
+  if (min <= 0 || max <= 0) {
+    return 0;
+  } else {
+    for (let multiple = max; multiple <= upperBound; multiple += max) {
+      const divisible = rango.every((value) => multiple % value === 0);
+      if (divisible) {
+        return multiple;
+      }
+    }
+  }
 };
 ```
 
