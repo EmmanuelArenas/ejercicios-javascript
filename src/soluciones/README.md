@@ -6,6 +6,7 @@
 - [Elimina Repetidos](#elimina-repetidos)
 - [Factorial](#factorial)
 - [Final Identico](#final-identico)
+- [Letra Faltante](#letra-faltante)
 - [Número Caracteres](#número-caracteres)
 - [Números Mayores](#números-mayores)
 - [Operaciones Basicas](#operaciones-basicas)
@@ -151,6 +152,23 @@ const numCaracteres = (str) => {
   }
 };
 numCaracteres("Hola Mundo"); //10
+```
+
+### Letra Faltante
+
+```js
+const letraFaltante = (str) => {
+  let codigoAt = str.charCodeAt(0);
+  let result = "Completa";
+
+  str.split("").forEach((e) => {
+    e.charCodeAt(0) === codigoAt
+      ? codigoAt++
+      : (result = String.fromCharCode(codigoAt));
+  });
+
+  return result;
+};
 ```
 
 ### Números mayores
