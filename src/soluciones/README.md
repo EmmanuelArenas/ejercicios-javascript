@@ -2,6 +2,7 @@
 
 ### Índice.
 
+- [Cambio Signo](#cambio-signo)
 - [Elimina Repetidos](#elimina-repetidos)
 - [Factorial](#factorial)
 - [Final Identico](#final-identico)
@@ -12,6 +13,14 @@
 - [Secuencia de Caracteres](#secuencia-de-caracteres)
 - [Temperatura](#temperatura)
 - [Título](#título)
+
+### Cambio Signo
+
+```js
+const cambioSigno = (num) => {
+  return num > 0 ? num * -1 : num * -1;
+};
+```
 
 ### Elimina Repetidos
 

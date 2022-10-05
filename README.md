@@ -33,6 +33,7 @@ Dividi los ejercicios en dos grupos, ya que algunos necesitan mas conocimientos 
 
 ## Índice
 
+- 🟢 [Cambio Signo](./src/ejercicios/cambio-signo/cambio_signo.js)
 - 🟢 [Eliminar Repetidos](./src/ejercicios/elimina-repetidos/elimina_repetidos.js)
 - 🔴 [Factorial](./src/ejercicios/factorial/factorial.js)
 - 🔴 [Final Identico](./src/ejercicios/final-identico/final_identico.js)
