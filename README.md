@@ -38,6 +38,7 @@ Dividi los ejercicios en dos grupos, ya que algunos necesitan mas conocimientos 
 - 🔴 [Factorial](./src/ejercicios/factorial/factorial.js)
 - 🔴 [Final Identico](./src/ejercicios/final-identico/final_identico.js)
 - 🔴 [Letra Faltante](./src/ejercicios/letra-faltante/letra_faltante.js)
+- 🟢 [Mayor de un array](./src/ejercicios/mayor-de-un-array/mayor_de_un_array.js)
 - 🔴 [Mínimo Común Múltiple](./src/ejercicios/mcm/mcm.js)
 - 🟢 [Número Caracteres](./src/ejercicios/num-caracteres/num_caracteres.js)
 - 🔴 [Números Mayores](./src/ejercicios/numeros-mayores/num_mayores.js)

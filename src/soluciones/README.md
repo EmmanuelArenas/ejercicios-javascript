@@ -7,6 +7,7 @@
 - [Factorial](#factorial)
 - [Final Identico](#final-identico)
 - [Letra Faltante](#letra-faltante)
+- [Mayor de un array](#mayor-de-un-array)
 - [Mínimo Común Múltiplo](#mínimo-común-múltiplo)
 - [Número Caracteres](#número-caracteres)
 - [Números Mayores](#números-mayores)
@@ -170,6 +171,18 @@ const letraFaltante = (str) => {
   });
 
   return result;
+};
+```
+
+### Mayor de un array
+
+```js
+const mayorDeUnArray = (arr) => {
+  let num_mayor = Number.NEGATIVE_INFINITY;
+  for (let num of arr) {
+    num > num_mayor ? (num_mayor = num) : 0;
+  }
+  return num_mayor;
 };
 ```
 
