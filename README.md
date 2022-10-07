@@ -45,6 +45,7 @@ Dividi los ejercicios en dos grupos, ya que algunos necesitan mas conocimientos 
 - 🟢 [Palabra Mas Larga](./src/ejercicios/palabra-mas-larga/palabra.js)
 - 🟢 [Temperatura](./src/ejercicios/temperatura/temperatura.js)
 - 🔴 [Secuencia Caracteres](./src/ejercicios/secuencia-caracteres/secuencia.js)
+- 🔴 [Suma un par del array](./src/ejercicios/suma-array/suma_array.js)
 - 🟢 [Título](./src/ejercicios/titulo/titulo.js)
 
 ---

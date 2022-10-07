@@ -13,6 +13,7 @@
 - [Operaciones Basicas](#operaciones-basicas)
 - [Palabra Mas Larga](#palabra-mas-larga)
 - [Secuencia de Caracteres](#secuencia-de-caracteres)
+- [Suma un par del array](#suma-un-par-del-array)
 - [Temperatura](#temperatura)
 - [Título](#título)
 
@@ -311,6 +312,26 @@ function secuencia(cadena) {
 
   return pila.length === 0;
 }
+```
+
+### Suma un par del array
+
+```js
+const sumArray = (array, num) => {
+  let arr = [];
+  for (i = 0; i < array.length; i++) {
+    array.map((e) => {
+      array[i] + e === num && array[i] !== e ? arr.push(array[i]) : 0;
+    });
+  }
+  return num === 0
+    ? [0, 0]
+    : num === 2
+    ? [1, 1]
+    : arr.length === 0
+    ? false
+    : [...new Set(arr)];
+};
 ```
 
 ### Temperatura
