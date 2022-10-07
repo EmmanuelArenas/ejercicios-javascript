@@ -13,6 +13,7 @@
 - [Números Mayores](#números-mayores)
 - [Operaciones Basicas](#operaciones-basicas)
 - [Palabra Mas Larga](#palabra-mas-larga)
+- [Palíndromo](#palíndromo)
 - [Secuencia de Caracteres](#secuencia-de-caracteres)
 - [Suma un par del array](#suma-un-par-del-array)
 - [Temperatura](#temperatura)
@@ -296,6 +297,17 @@ const palabraMasLarga = (str) => {
   respuesta = [];
   respuesta.push(palabraLarga, palabraLarga.length);
   return respuesta;
+};
+```
+
+### Palíndromo
+
+```js
+const palindromo = (str) => {
+  let regex = /[^a-zA-Z0-9]/g;
+  let clean = str.replace(regex, "");
+  let reverse = clean.split("").reverse().join("");
+  return clean.toLowerCase() === reverse.toLowerCase() ? true : false;
 };
 ```
 

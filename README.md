@@ -44,6 +44,7 @@ Dividi los ejercicios en dos grupos, ya que algunos necesitan mas conocimientos 
 - 🔴 [Números Mayores](./src/ejercicios/numeros-mayores/num_mayores.js)
 - 🟢 [Operaciones Basicas](./src/ejercicios/operaciones-basicas/basicas.js)
 - 🟢 [Palabra Mas Larga](./src/ejercicios/palabra-mas-larga/palabra.js)
+- 🔴 [Palíndromo](./src/ejercicios/palindromo/palindromo.js)
 - 🟢 [Temperatura](./src/ejercicios/temperatura/temperatura.js)
 - 🔴 [Secuencia Caracteres](./src/ejercicios/secuencia-caracteres/secuencia.js)
 - 🔴 [Suma un par del array](./src/ejercicios/suma-array/suma_array.js)
