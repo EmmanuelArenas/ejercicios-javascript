@@ -42,6 +42,7 @@ Dividi los ejercicios en dos grupos, ya que algunos necesitan mas conocimientos 
 - 🔴 [Mínimo Común Múltiple](./src/ejercicios/mcm/mcm.js)
 - 🟢 [Número Caracteres](./src/ejercicios/num-caracteres/num_caracteres.js)
 - 🔴 [Números Mayores](./src/ejercicios/numeros-mayores/num_mayores.js)
+- 🟢 [Números Primos](./src/ejercicios/numeros-primos/num_primos.js)
 - 🟢 [Operaciones Basicas](./src/ejercicios/operaciones-basicas/basicas.js)
 - 🟢 [Palabra Mas Larga](./src/ejercicios/palabra-mas-larga/palabra.js)
 - 🔴 [Palíndromo](./src/ejercicios/palindromo/palindromo.js)

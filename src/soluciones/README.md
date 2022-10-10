@@ -11,6 +11,7 @@
 - [Mínimo Común Múltiplo](#mínimo-común-múltiplo)
 - [Número Caracteres](#número-caracteres)
 - [Números Mayores](#números-mayores)
+- [Números Primos](#números-primos)
 - [Operaciones Basicas](#operaciones-basicas)
 - [Palabra Mas Larga](#palabra-mas-larga)
 - [Palíndromo](#palíndromo)
@@ -245,6 +246,18 @@ const numerosMasGrandes = (arr) => {
 ```js
 const numerosMasGrandes = (arr) => {
   return arr.map(Function.apply.bind(Math.max, null));
+};
+```
+
+### Números Primos
+
+```js
+const numPrimos = (num) => {
+  let primos = [];
+  for (let i = 2; i <= num; i++) {
+    primos.every((e) => i % e !== 0) ? primos.push(i) : 0;
+  }
+  return primos;
 };
 ```
 
