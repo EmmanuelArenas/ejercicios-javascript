@@ -15,6 +15,7 @@
 - [Palabra Mas Larga](#palabra-mas-larga)
 - [Palíndromo](#palíndromo)
 - [Secuencia de Caracteres](#secuencia-de-caracteres)
+- [Suma Primos](#suma-primos)
 - [Suma un par del array](#suma-un-par-del-array)
 - [Temperatura](#temperatura)
 - [Título](#título)
@@ -337,6 +338,18 @@ function secuencia(cadena) {
 
   return pila.length === 0;
 }
+```
+
+### Suma Primos
+
+```js
+const sumaPrimos = (num) => {
+  let numPrimos = [];
+  for (let i = 2; i <= num; i++) {
+    numPrimos.every((e) => i % e !== 0) ? numPrimos.push(i) : 0;
+  }
+  return numPrimos.reduce((sum, e) => sum + e, 0);
+};
 ```
 
 ### Suma un par del array

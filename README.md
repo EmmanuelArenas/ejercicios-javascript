@@ -47,6 +47,7 @@ Dividi los ejercicios en dos grupos, ya que algunos necesitan mas conocimientos 
 - 🔴 [Palíndromo](./src/ejercicios/palindromo/palindromo.js)
 - 🟢 [Temperatura](./src/ejercicios/temperatura/temperatura.js)
 - 🔴 [Secuencia Caracteres](./src/ejercicios/secuencia-caracteres/secuencia.js)
+- 🔴 [Suma Primos](./src/ejercicios/suma-primos/suma_primos.js)
 - 🔴 [Suma un par del array](./src/ejercicios/suma-array/suma_array.js)
 - 🟢 [Título](./src/ejercicios/titulo/titulo.js)
 
