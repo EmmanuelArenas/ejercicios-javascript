@@ -3,6 +3,7 @@
 ### Índice.
 
 - [Cambio Signo](#cambio-signo)
+- [Cuadrado de Enteros](#cuadrado-de-enteros)
 - [Elimina Repetidos](#elimina-repetidos)
 - [Factorial](#factorial)
 - [Final Identico](#final-identico)
@@ -26,6 +27,14 @@
 ```js
 const cambioSigno = (num) => {
   return num > 0 ? num * -1 : num * -1;
+};
+```
+
+### Cuadrado de Enteros
+
+```js
+const cuadradoEnteros = (arr) => {
+  return arr.filter((e) => e > 0 && e % parseInt(e) === 0).map((e) => e ** 2);
 };
 ```
 
