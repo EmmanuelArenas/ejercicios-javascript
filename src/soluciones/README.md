@@ -2,43 +2,41 @@
 
 ### Índice.
 
-- [Recuerda intentarlo antes de venir a ver las respuestas.](#recuerda-intentarlo-antes-de-venir-a-ver-las-respuestas)
-  - [Índice.](#índice)
-  - [Cambio Signo](#cambio-signo)
-  - [Cuadrado de Enteros](#cuadrado-de-enteros)
-  - [Elimina Repetidos](#elimina-repetidos)
-  - [Factorial](#factorial)
-  - [Fibonacci](#fibonacci)
-  - [Final Identico](#final-identico)
-  - [Número Caracteres](#número-caracteres)
-  - [Letra Faltante](#letra-faltante)
-  - [Mayor de un array](#mayor-de-un-array)
-  - [Mínimo Común Múltiplo](#mínimo-común-múltiplo)
-  - [Números mayores](#números-mayores)
-  - [Números Primos](#números-primos)
-  - [Operaciones Basicas](#operaciones-basicas)
-  - [Palabra Mas Larga](#palabra-mas-larga)
-  - [Palíndromo](#palíndromo)
-  - [Secuencia de caracteres](#secuencia-de-caracteres)
-  - [Suma Primos](#suma-primos)
-  - [Suma un par del array](#suma-un-par-del-array)
-  - [Temperatura](#temperatura)
-  - [Título](#título)
+- [Cambio Signo](#cambio-signo)
+- [Cuadrado de Enteros](#cuadrado-de-enteros)
+- [Elimina Repetidos](#elimina-repetidos)
+- [Factorial](#factorial)
+- [Fibonacci](#fibonacci)
+- [Final Identico](#final-identico)
+- [Letra Faltante](#letra-faltante)
+- [Mayor de un array](#mayor-de-un-array)
+- [Mínimo Común Múltiplo](#mínimo-común-múltiplo)
+- [Número Caracteres](#número-caracteres)
+- [Números Mayores](#números-mayores)
+- [Números Primos](#números-primos)
+- [Operaciones Basicas](#operaciones-basicas)
+- [Palabra Mas Larga](#palabra-mas-larga)
+- [Palíndromo](#palíndromo)
+- [Secuencia de Caracteres](#secuencia-de-caracteres)
+- [Suma Primos](#suma-primos)
+- [Suma un par del array](#suma-un-par-del-array)
+- [Temperatura](#temperatura)
+- [Título](#título)
 
 ### Cambio Signo
 
 ```js
-const cambioSigno = num => {
-  return num > 0 ? num * -1 : num * -1
-}
+const cambioSigno = (num) => {
+  return num > 0 ? num * -1 : num * -1;
+};
 ```
 
 ### Cuadrado de Enteros
 
 ```js
-const cuadradoEnteros = arr => {
-  return arr.filter(e => e > 0 && e % parseInt(e) === 0).map(e => e ** 2)
-}
+const cuadradoEnteros = (arr) => {
+  return arr.filter((e) => e > 0 && e % parseInt(e) === 0).map((e) => e ** 2);
+};
 ```
 
 ### Elimina Repetidos
@@ -46,44 +44,44 @@ const cuadradoEnteros = arr => {
 **Metodo Set**
 
 ```js
-const arr = [1, 3, 1, 'hola', 'hola', true, false, false, true]
+const arr = [1, 3, 1, "hola", "hola", true, false, false, true];
 
-const eliminaRepetidos = arr => {
-  return [...new Set(arr)]
-}
+const eliminaRepetidos = (arr) => {
+  return [...new Set(arr)];
+};
 
-eliminaRepetidos(arr) //[ 1, 3, 'hola', true, false ]
+eliminaRepetidos(arr); //[ 1, 3, 'hola', true, false ]
 ```
 
 **Metodo filter**
 
 ```js
-const arr = [1, 3, 1, 'hola', 'hola', true, false, false, true]
+const arr = [1, 3, 1, "hola", "hola", true, false, false, true];
 
-const eliminaRepetidos = arr => {
+const eliminaRepetidos = (arr) => {
   return (resultadoFilter = arr.filter((item, index) => {
-    return arr.indexOf(item) === index
-  }))
-}
+    return arr.indexOf(item) === index;
+  }));
+};
 
-eliminaRepetidos(arr) //[ 1, 3, 'hola', true, false ]
+eliminaRepetidos(arr); //[ 1, 3, 'hola', true, false ]
 ```
 
 **Metodo reduce**
 
 ```js
-const arr = [1, 3, 1, 'hola', 'hola', true, false, false, true]
+const arr = [1, 3, 1, "hola", "hola", true, false, false, true];
 
-const eliminaRepetidos = arr => {
+const eliminaRepetidos = (arr) => {
   let resultReduce = arr.reduce((acc, item) => {
     if (!acc.includes(item)) {
-      acc.push(item)
+      acc.push(item);
     }
-    return acc
-  }, [])
-  return resultReduce
-}
-eliminaRepetidos(arr) //[ 1, 3, 'hola', true, false ]
+    return acc;
+  }, []);
+  return resultReduce;
+};
+eliminaRepetidos(arr); //[ 1, 3, 'hola', true, false ]
 ```
 
 ### Factorial
@@ -91,14 +89,14 @@ eliminaRepetidos(arr) //[ 1, 3, 'hola', true, false ]
 **Factorial con ciclo for**
 
 ```js
-const factorialFor = num => {
-  let result = 1
+const factorialFor = (num) => {
+  let result = 1;
   for (let i = 2; i <= num; i++) {
-    result *= i
+    result *= i;
   }
-  return result
-}
-factorialFor(6) //720
+  return result;
+};
+factorialFor(6); //720
 ```
 
 **Factorial con recursividad**
@@ -170,97 +168,99 @@ const fibonacciWhile = (num) => {
   while(i < num) {
     result[i] = result[i - 1]  result[i - 2]
   }
- return result[num - 1] 
+ return result[num - 1]
 }
 ```
- 
+
 **fibonacci con recursividad**
+
 ```js
-const  fibonacciRecursivo = (num) =>  {
-  if(num === 1) return 0
+const fibonacciRecursivo = num => {
+  if (num === 1) return 0
   num = num - 1
-  const fibo = (n) => {
+  const fibo = n => {
     if (n <= 1) return n
     return fibo(n - 1) + fibo(n - 2)
-  } 
+  }
   return fibo(num)
 }
-
 ```
 
 ### Final Identico
 
 ```js
 const finalIdentico = (cadena, final) => {
-  let resultado = cadena.slice(cadena.length - final.length) === final
-  return resultado
-}
+  let resultado = cadena.slice(cadena.length - final.length) === final;
+  return resultado;
+};
 ```
 
 ```js
 const finalIdentico = (cadena, final) => {
-  return cadena.endsWith(final)
-}
+  return cadena.endsWith(final);
+};
 ```
 
 ### Número Caracteres
 
 ```js
-const numCaracteres = str => {
+const numCaracteres = (str) => {
   if (str) {
-    return str.length
+    return str.length;
   }
-}
-numCaracteres('Hola Mundo') //10
+};
+numCaracteres("Hola Mundo"); //10
 ```
 
 ### Letra Faltante
 
 ```js
-const letraFaltante = str => {
-  let codigoAt = str.charCodeAt(0)
-  let result = 'Completa'
+const letraFaltante = (str) => {
+  let codigoAt = str.charCodeAt(0);
+  let result = "Completa";
 
-  str.split('').forEach(e => {
-    e.charCodeAt(0) === codigoAt ? codigoAt++ : (result = String.fromCharCode(codigoAt))
-  })
+  str.split("").forEach((e) => {
+    e.charCodeAt(0) === codigoAt
+      ? codigoAt++
+      : (result = String.fromCharCode(codigoAt));
+  });
 
-  return result
-}
+  return result;
+};
 ```
 
 ### Mayor de un array
 
 ```js
-const mayorDeUnArray = arr => {
-  let num_mayor = Number.NEGATIVE_INFINITY
+const mayorDeUnArray = (arr) => {
+  let num_mayor = Number.NEGATIVE_INFINITY;
   for (let num of arr) {
-    num > num_mayor ? (num_mayor = num) : 0
+    num > num_mayor ? (num_mayor = num) : 0;
   }
-  return num_mayor
-}
+  return num_mayor;
+};
 ```
 
 ### Mínimo Común Múltiplo
 
 ```js
-const minimoComunMultiplo = arr => {
-  const [min, max] = arr.sort((a, b) => a - b)
+const minimoComunMultiplo = (arr) => {
+  const [min, max] = arr.sort((a, b) => a - b);
   const rango = Array(max - min + 1)
     .fill(0)
-    .map(($, i) => i + min)
-  const upperBound = rango.reduce((prod, curr) => prod * curr)
+    .map(($, i) => i + min);
+  const upperBound = rango.reduce((prod, curr) => prod * curr);
   if (min <= 0 || max <= 0) {
-    return 0
+    return 0;
   } else {
     for (let multiple = max; multiple <= upperBound; multiple += max) {
-      const divisible = rango.every(value => multiple % value === 0)
+      const divisible = rango.every((value) => multiple % value === 0);
       if (divisible) {
-        return multiple
+        return multiple;
       }
     }
   }
-}
+};
 ```
 
 ### Números mayores
@@ -268,49 +268,49 @@ const minimoComunMultiplo = arr => {
 **Números mayores con ciclo for**
 
 ```js
-const numerosMasGrandes = arr => {
-  const newArry = []
+const numerosMasGrandes = (arr) => {
+  const newArry = [];
   for (let i = 0; i < arr.length; i++) {
-    let numGrande = arr[i][0]
+    let numGrande = arr[i][0];
     for (let j = 1; j < arr[i].length; j++) {
       if (arr[i][j] > numGrande) {
-        numGrande = arr[i][j]
+        numGrande = arr[i][j];
       }
     }
-    newArry.push(numGrande)
+    newArry.push(numGrande);
   }
-  return newArry
-}
+  return newArry;
+};
 ```
 
 **Números mayores con metodos**
 
 ```js
-const numerosMasGrandes = arr => {
+const numerosMasGrandes = (arr) => {
   return arr.map(function (group) {
     return group.reduce(function (prev, current) {
-      return current > prev ? current : prev
-    })
-  })
-}
+      return current > prev ? current : prev;
+    });
+  });
+};
 ```
 
 ```js
-const numerosMasGrandes = arr => {
-  return arr.map(Function.apply.bind(Math.max, null))
-}
+const numerosMasGrandes = (arr) => {
+  return arr.map(Function.apply.bind(Math.max, null));
+};
 ```
 
 ### Números Primos
 
 ```js
-const numPrimos = num => {
-  let primos = []
+const numPrimos = (num) => {
+  let primos = [];
   for (let i = 2; i <= num; i++) {
-    primos.every(e => i % e !== 0) ? primos.push(i) : 0
+    primos.every((e) => i % e !== 0) ? primos.push(i) : 0;
   }
-  return primos
-}
+  return primos;
+};
 ```
 
 ### Operaciones Basicas
@@ -319,113 +319,113 @@ const numPrimos = num => {
 
 ```js
 const suma = (a, b) => {
-  return a + b
-}
+  return a + b;
+};
 ```
 
 **Resta**
 
 ```js
 const resta = (a, b) => {
-  return a - b
-}
+  return a - b;
+};
 ```
 
 **División**
 
 ```js
 const division = (a, b) => {
-  return a / b
-}
+  return a / b;
+};
 ```
 
 **Multiplicación**
 
 ```js
 const multiplicacion = (a, b) => {
-  return a * b
-}
+  return a * b;
+};
 ```
 
 ### Palabra Mas Larga
 
 ```js
-const palabraMasLarga = str => {
+const palabraMasLarga = (str) => {
   // tu codigo
-  const dividir = str.split(' ')
-  let palabraLarga = dividir[0]
+  const dividir = str.split(" ");
+  let palabraLarga = dividir[0];
 
   for (const palabra of dividir) {
     if (palabra.length >= palabraLarga.length) {
-      palabraLarga = palabra
+      palabraLarga = palabra;
     }
   }
-  respuesta = []
-  respuesta.push(palabraLarga, palabraLarga.length)
-  return respuesta
-}
+  respuesta = [];
+  respuesta.push(palabraLarga, palabraLarga.length);
+  return respuesta;
+};
 ```
 
 ### Palíndromo
 
 ```js
-const palindromo = str => {
-  let regex = /[^a-zA-Z0-9]/g
-  let clean = str.replace(regex, '')
-  let reverse = clean.split('').reverse().join('')
-  return clean.toLowerCase() === reverse.toLowerCase() ? true : false
-}
+const palindromo = (str) => {
+  let regex = /[^a-zA-Z0-9]/g;
+  let clean = str.replace(regex, "");
+  let reverse = clean.split("").reverse().join("");
+  return clean.toLowerCase() === reverse.toLowerCase() ? true : false;
+};
 ```
 
 ### Secuencia de caracteres
 
 ```js
 function secuencia(cadena) {
-  const apertura = '([{'
-  const cierre = ')]}'
-  const comparador = { ')': '(', ']': '[', '}': '{' }
-  const pila = []
+  const apertura = "([{";
+  const cierre = ")]}";
+  const comparador = { ")": "(", "]": "[", "}": "{" };
+  const pila = [];
 
   for (const caracter of cadena) {
     if (apertura.includes(caracter)) {
-      pila.push(caracter)
+      pila.push(caracter);
     } else if (cierre.includes(caracter)) {
       if (pila.length == 0) {
-        return false
+        return false;
       }
       if (pila[pila.length - 1] === comparador[caracter]) {
-        pila.pop()
+        pila.pop();
       } else {
-        return false
+        return false;
       }
     }
   }
 
-  return pila.length === 0
+  return pila.length === 0;
 }
 ```
 
 ### Suma Primos
 
 ```js
-const sumaPrimos = num => {
-  let numPrimos = []
+const sumaPrimos = (num) => {
+  let numPrimos = [];
   for (let i = 2; i <= num; i++) {
-    numPrimos.every(e => i % e !== 0) ? numPrimos.push(i) : 0
+    numPrimos.every((e) => i % e !== 0) ? numPrimos.push(i) : 0;
   }
-  return numPrimos.reduce((sum, e) => sum + e, 0)
-}
+  return numPrimos.reduce((sum, e) => sum + e, 0);
+};
 ```
 
 ### Suma un par del array
 
 ```js
 const sumArray = (array, num) => {
-  let arr = []
+  let arr = [];
   for (i = 0; i < array.length; i++) {
-    array.map(e => {
-      array[i] + e === num && array[i] !== e ? arr.push(array[i]) : 0
-    })
+    array.map((e) => {
+      array[i] + e === num && array[i] !== e ? arr.push(array[i]) : 0;
+    });
   }
   return num === 0
     ? [0, 0]
@@ -433,35 +433,35 @@ const sumArray = (array, num) => {
     ? [1, 1]
     : arr.length === 0
     ? false
-    : [...new Set(arr)]
-}
+    : [...new Set(arr)];
+};
 ```
 
 ### Temperatura
 
 ```js
-const celciusAFahrenheit = celcius => {
+const celciusAFahrenheit = (celcius) => {
   // Tu código va aquí
-  let fahrenheit = (celcius * 9) / 5 + 32
-  return Math.floor(fahrenheit)
-}
+  let fahrenheit = (celcius * 9) / 5 + 32;
+  return Math.floor(fahrenheit);
+};
 ```
 
 ```js
-const fahrenheitACelcius = fahrenheit => {
+const fahrenheitACelcius = (fahrenheit) => {
   // Tu código va aquí
-  let celcius = ((fahrenheit - 32) * 5) / 9
-  return Math.ceil(celcius)
-}
+  let celcius = ((fahrenheit - 32) * 5) / 9;
+  return Math.ceil(celcius);
+};
 ```
 
 ```js
-const fahrenheitAKelvin = fahrenheit => {
+const fahrenheitAKelvin = (fahrenheit) => {
   // Tu código va aquí
-  let kelvin = (fahrenheit - 32) * (5 / 9) + 273.15
-  let result = Math.abs(Math.round(kelvin))
-  return result
-}
+  let kelvin = (fahrenheit - 32) * (5 / 9) + 273.15;
+  let result = Math.abs(Math.round(kelvin));
+  return result;
+};
 ```
 
 ### Título
@@ -470,12 +470,13 @@ const fahrenheitAKelvin = fahrenheit => {
 
 ```js
 function titulo(str) {
-  let strSplit = str.split(' ')
-  let newStr = []
+  let strSplit = str.split(" ");
+  let newStr = [];
   for (let i = 0; i < strSplit.length; i++) {
-    newStr[i] = strSplit[i][0].toUpperCase() + strSplit[i].slice(1).toLowerCase()
+    newStr[i] =
+      strSplit[i][0].toUpperCase() + strSplit[i].slice(1).toLowerCase();
   }
-  return newStr.join(' ')
+  return newStr.join(" ");
 }
 ```
 
@@ -483,12 +484,13 @@ function titulo(str) {
 
 ```js
 function titulo(str) {
-  let strSplit = str.split(' ')
-  let newStr = []
+  let strSplit = str.split(" ");
+  let newStr = [];
   for (let i in strSplit) {
-    newStr[i] = strSplit[i][0].toUpperCase() + strSplit[i].slice(1).toLowerCase()
+    newStr[i] =
+      strSplit[i][0].toUpperCase() + strSplit[i].slice(1).toLowerCase();
   }
-  return newStr.join(' ')
+  return newStr.join(" ");
 }
 ```
 
@@ -498,8 +500,8 @@ function titulo(str) {
 function titulo(str) {
   return str
     .toLowerCase()
-    .split(' ')
-    .map(val => val.replace(val.charAt(0), val.charAt(0).toUpperCase()))
-    .join(' ')
+    .split(" ")
+    .map((val) => val.replace(val.charAt(0), val.charAt(0).toUpperCase()))
+    .join(" ");
 }
 ```
