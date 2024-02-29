@@ -6,6 +6,7 @@
 - [Cuadrado de Enteros](#cuadrado-de-enteros)
 - [Elimina Repetidos](#elimina-repetidos)
 - [Factorial](#factorial)
+- [Fibonacci](#fibonacci)
 - [Final Identico](#final-identico)
 - [Letra Faltante](#letra-faltante)
 - [Mayor de un array](#mayor-de-un-array)
@@ -141,6 +142,48 @@ i++;
 return result;
 };
 factorialWhile(6);
+```
+
+### Fibonacci
+
+**fibonacci con ciclo for**
+
+```js
+const fibonacciFor = num => {
+  const result = [0, 1]
+  for (let i = 2; i < num; i++) {
+    result[i] = result[i - 1] + result[i - 2]
+  }
+  return result[num - 1]
+}
+fibonacciFor(7) // 8
+```
+
+**fibonacci con ciclo while**
+
+```js
+const fibonacciWhile = (num) => {
+  const result = [0,1]
+  let i = 2
+  while(i < num) {
+    result[i] = result[i - 1]  result[i - 2]
+  }
+ return result[num - 1]
+}
+```
+
+**fibonacci con recursividad**
+
+```js
+const fibonacciRecursivo = num => {
+  if (num === 1) return 0
+  num = num - 1
+  const fibo = n => {
+    if (n <= 1) return n
+    return fibo(n - 1) + fibo(n - 2)
+  }
+  return fibo(num)
+}
 ```
 
 ### Final Identico
